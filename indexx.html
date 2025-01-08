@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add a simple dark mode style */
+        body.dark-mode {
+            background-color: #333;
+            color:#134126;
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <aside class="sidebar">
+            <div class="profile">
+                <img src="1699695343672.jpg" alt="Deepak" >
+                <h2>Deepak Kumar</h2>
+                <p>Front-End Web Developer</p>
+            </div>
+            <div class="contact-info">
+                <h3>Contact</h3>
+                <ul>
+                    <li>Email: deepakumar977970@gmail.com <button onclick="copyToClipboard('deepakumar977970@gmail.com')">Copy</button></li>
+                    <li>Phone: (91) 6397797072</li>
+                    <li>Location: Rampur, India</li>
+                    <li>LinkedIn: Deepak Kumar</li>
+                    <li>GitHub: deepakumar12345678</li>
+                </ul>
+            </div>
+            <div class="skills">
+                <h3>Skills</h3>
+                <ul>
+                    <li>HTML & CSS</li>
+                    <li>Basic JavaScript</li>
+                    <li>Responsive Web Design</li>
+                    <li>React.js Basics</li>
+                    <li>TailwindCSS</li>
+                    <li>Version Control (Git)</li>
+                </ul>
+            </div>
+            <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+        </aside>
+
+        <main class="main-content">
+            <section class="summary">
+                <h3>Profile</h3>
+                <p>
+                    Recently graduated Front-End Web Developer with a passion for building responsive and user-friendly websites. 
+                    Eager to learn new technologies and grow as a developer in a collaborative environment.
+                </p>
+            </section>
+
+            <section class="projects">
+                <h3>Projects <button onclick="toggleSection('projects')">Toggle</button></h3>
+                <div id="projects">
+                    <div class="project">
+                        <h4>My Weather App</h4>
+                        <a href="https://weatherappbydeepak.netlify.app/">app</a>
+                        <p>Developed a Weather App using HTML, CSS, and JavaScript to showcase my skills and projects.</p>
+                    </div>
+                    <div class="project">
+                        <h4>Superman Resume</h4>
+                        <p>Created a simple Superman Resume application using HTML, CSS, JavaScript.</p>
+                    </div>
+                    <div class="project">
+                        <h4>My Village</h4>
+                        <p>Village responsive using HTML, CSS, JavaScript.</p>
+                    </div>
+                    <div class="project">
+                        <h4>Generate QR-Code</h4>
+                        <a href="https://generateqr-code.netlify.app/">Generate</a>
+                        <p>Generate QR-Code using HTML, CSS, JavaScript.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="education">
+                <h3>Education</h3>
+                <p><strong>Bachelor's Degree in Computer Science</strong><br>IFTM University Moradabad | 2022- 2026</p>
+            </section>
+        </main>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
